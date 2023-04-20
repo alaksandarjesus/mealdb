@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal DB</title>
+    <link rel="stylesheet" href="/styles/shared.css">
+    <link rel="stylesheet" href="/styles/index.css">
+</head>
+<body>
+
+    <div class="container">
+        <form action="list.html" onsubmit="return onFormSubmit()" > 
+        <div class="row">
+            <h4 class="text-center">Meal DB Search</h4>
+            <div class="query-wrapper">
+                <input type="text" id="q" name="q" onkeyup="onQueryKeyup()">
+            </div>
+        </div>
+        <div class="row">
+            <div class="submit-wrapper">
+                <button class="btn btn-submit" type="submit">Search</button>
+            </div>
+        </div>
+        </form>
+    </div>
+    
+    <script src="/scripts/shared.js"></script>
+    <script src="/scripts/index.js"></script>
+</body>
+</html>

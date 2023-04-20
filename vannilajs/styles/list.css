@@ -1,0 +1,10 @@
+.meal-thumb{
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.menu-link h4{
+    height: 40px;
+}

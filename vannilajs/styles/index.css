@@ -1,0 +1,18 @@
+.submit-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-submit{
+    width: 80px;
+    height: 30px;
+    border: none;
+    background-color: #2d2d87;
+    color: #fff;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.btn-submit:hover{
+    background-color: #3e3ec9;
+
+}
