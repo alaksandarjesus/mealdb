@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="row">   
+        <div class="col-12">
+            <app-search [searchFormControl]="form.get('search')"></app-search>
+        </div>
+    </div>
+</div>
+<div class="container my-3">
+    <div class="row">
+        <div class="col-12 col-md-4 col-lg-3">
+            <div class="row">
+                <div class="col-12">
+                    <app-categories [categoryFormControl]="form.get('category')"></app-categories>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <app-area [areaFormControl]="form.get('area')"></app-area>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <app-ingredients [ingredientFormControl]="form.get('ingredient')"></app-ingredients>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-8 col-lg-9">
+            <div *ngIf="fetchingMessage" class="fetching-message d-flex justify-content-center align-items-center">{{fetchingMessage}}</div>
+            <app-meals *ngIf="meals.length" [meals]="meals"></app-meals>
+        </div>
+    </div>
+</div>

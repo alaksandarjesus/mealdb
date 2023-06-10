@@ -1,0 +1,14 @@
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">Categories</h5>
+        <h6 class="card-subtitle text-muted">Filter by Categories</h6>
+        <div class="form-group">
+            <select name="" id="" class="form-select mt-3" [formControl]="categoryFormControl">
+                <option value="">All</option>
+                <option [value]="option.strCategory" *ngFor="let option of categories">
+                    {{option.strCategory}}
+                </option>
+            </select>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">Area</h5>
+        <h6 class="card-subtitle text-muted">Filter by Area</h6>
+        <div class="form-group">
+            <select name="" id="" class="form-select mt-3" [formControl]="areaFormControl">
+                <option value="">All</option>
+                <option [value]="option.strArea" *ngFor="let option of areas">
+                    {{option.strArea}}
+                </option>
+            </select>
+        </div>
+    </div>
+</div>

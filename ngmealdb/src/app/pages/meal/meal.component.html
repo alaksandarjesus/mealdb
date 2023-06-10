@@ -1,0 +1,10 @@
+<div class="container my-3" *ngIf="meal?.idMeal">
+    <div class="row">
+        <div class="col-12 col-md-4">
+            <app-meal-meal [meal]="meal"></app-meal-meal>
+        </div>
+        <div class="col-12 col-md-8">
+            <app-meal-ingredients [meal]="meal"></app-meal-ingredients>
+        </div>
+    </div>
+</div>

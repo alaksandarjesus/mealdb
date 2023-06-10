@@ -1,0 +1,18 @@
+<div class="row">
+    <div class="col-12">
+        <h5>Ingredients</h5>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12 col-md-4" *ngFor="let ingredient of ingredients">
+        <div class="card mb-3">
+            <img [src]="getIngredientImage(ingredient)" class="card-img-top w-100" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{ingredient.name}}</h5>
+                <p class="card-text">
+                    {{ingredient.measure}}
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

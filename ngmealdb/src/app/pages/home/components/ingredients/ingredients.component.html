@@ -1,0 +1,14 @@
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">Ingredients</h5>
+        <h6 class="card-subtitle text-muted">Filter by Ingredients</h6>
+        <div class="form-group">
+            <select name="" id="" class="form-select mt-3" [formControl]="ingredientFormControl">
+                <option value="">All</option>
+                <option [value]="option.strIngredient" *ngFor="let option of ingredients">
+                    {{option.strIngredient}}
+                </option>
+            </select>
+        </div>
+    </div>
+</div>
